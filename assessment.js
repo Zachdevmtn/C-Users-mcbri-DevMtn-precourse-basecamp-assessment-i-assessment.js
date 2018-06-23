@@ -12,17 +12,15 @@ var lovesCode = true;
 
 // #4 Using the previously created variables, create a new variable called 'me' that uses the myName and faveNum varible to create a sentence like this 'My name is Bryan and my favorite number is 3'
 
-var me = 'My name is ' + myName + ' and my favorite number is ' + faveNum + '.';
+var me = 'My name is ' + myName + ' and my favorite number is ' + faveNum;
 
 // #5 Using the previously created faveNum variable, create a new variable called 'trueFaveNum'. *trueFaveNum* should return true when comparing faveNum to your favorite number.v // HINT: Use a comparison operator
 
-var trueFaveNum;
-trueFaveNum = favNum;
+var trueFaveNum = faveNum === faveNum;
 
 // #6 Create a new variable called notHakeem. Using the previously created myName variable, test that your name DOES NOT equal the string 'Hakeem Olajuwon'. If your name does happen to be Hakeem Olajuwon, test against 'Karl Malone'
 
-var notHakeem;
-notHakeem != myName
+var notHakeem = myName != 'Hakeem Olajuwon';
 
 // #7 Create an if statement that checks the age variable below. If age is greater than 16, then set canDrive to true otherwise set canDrive to false. The canDrive variable will be set by the unit test so do not adjust it.
 var age = 18;
@@ -38,9 +36,9 @@ if (age > 16) {
 var colorResponse;
 
 var responseCreator = function(param){
-  if (param = green) {
+  if (param.toLowerCase() === 'green') {
     colorResponse = 'Green is okay';
-  } else if (param = red) {
+  } else if (param === 'red') {
     colorResponse = 'I heart red';
   } else {
     colorResponse = 'What is your favorite color?';
